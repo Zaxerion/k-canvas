@@ -36,11 +36,11 @@ module.exports = class Goodbye2 {
         // Create canvas
         const canvas = Canvas.createCanvas(600, 300);
         const ctx = canvas.getContext("2d");
-       
-   
-        // Draw background
+              // Draw background
         let background = await Canvas.loadImage(this.bg);
+        ctx.globalAlpha = 0.4; // Make background darker with opacity
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+        ctx.globalAlpha = 1.0; // Reset opacity for other elements
         let fram = await Canvas.loadImage(this.fm);
         ctx.drawImage(fram, 0, 0, canvas.width, canvas.height);
 

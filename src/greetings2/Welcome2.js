@@ -44,7 +44,9 @@ module.exports = class Welcome2 {
    
         // Draw background
         let background = await Canvas.loadImage(this.bg);
+        ctx.globalAlpha = 0.4;
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+        ctx.globalAlpha = 1.0;
         let fram = await Canvas.loadImage(this.fm);
         ctx.drawImage(fram, 0, 0, canvas.width, canvas.height);
 

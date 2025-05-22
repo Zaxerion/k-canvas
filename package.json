@@ -1,6 +1,6 @@
 {
   "name": "@zaxerion/k-canvas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cuma update url dari base knights canvas",
   "main": "index.js",
   "repository": {
@@ -21,9 +21,7 @@
   },
   "homepage": "https://github.com/Zaxerion/k-canvas#readme",
   "dependencies": {
-    "canvas": "^2.6.1",
-    "fortnite-9812": "^1.0.4",
-    "fortnite": "^4.3.2",
-    "moment": "^2.29.1"
+    "canvas": "^3.1.0",
+    "moment": "^2.30.1"
   }
 }

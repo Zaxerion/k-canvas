@@ -27,18 +27,15 @@ module.exports = class Goodbye3 {
    
         // Draw background
         let background = await Canvas.loadImage(this.bg);
-        ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-
-        let usrname = this.username;
-        let name = usrname.length > 10 ? usrname.substring(0, 10) + "..." : usrname;
+        ctx.drawImage(background, 0, 0, canvas.width, canvas.height);        const usrname = this.username;
+        const name = usrname.length > 10 ? usrname.substring(0, 10) + "..." : usrname;
         ctx.globalAlpha = 1;
         ctx.font = "700 45px Courier New";
         ctx.textAlign = 'left';
         ctx.fillStyle = "#ffffff";
         ctx.fillText(name, 290, 338);
         
-        let usrname = this.username;
-        let name = usrname.length > 10 ? usrname.substring(0, 10) + "..." : usrname;
+        // Reuse the same name variable for the second text
         ctx.globalAlpha = 1;
         ctx.font = "700 30px Courier New";
         ctx.textAlign = 'center';
